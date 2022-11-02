@@ -1,7 +1,7 @@
 
 
-function ExpensesDate(props){
-    console.log(props);
+function ExpenseDate(props){
+    console.log("Normal", props);
     const month = props.date.toLocaleString('en-US', {month: 'long'});
     const day = props.date.toLocaleString('es-US', {day: '2-digit'} );
     const year = props.date.getFullYear();
@@ -15,4 +15,4 @@ function ExpensesDate(props){
     );
 }
 
-export default ExpensesDate;
+export default ExpenseDate;
