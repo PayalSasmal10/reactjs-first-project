@@ -14,12 +14,19 @@ const ExpenseForm = () => {
     });
 
     const titleChangeHandler = (e) => {
-        // setEnteredTitle(e.target.value);
-        setUserInput({
-            ...userInput,
-            enteredTitle : e.target.value,
-        });
-    };
+        setEnteredTitle(e.target.value);
+        // setUserInput({
+        //     ...userInput,
+        //     enteredTitle : e.target.value,
+        // });
+
+        // For rememebering prevous state
+        // setUserInput(prvState)
+        //     return {
+        //     ...prvState,
+        //     enteredTitle : e.target.value,
+        //     };
+        // };
 
     const amountChangeHandler = (e) => {
         // setEnteredAmount(e.target.value);
