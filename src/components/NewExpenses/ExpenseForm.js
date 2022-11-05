@@ -29,20 +29,20 @@ const ExpenseForm = () => {
         // };
 
     const amountChangeHandler = (e) => {
-        // setEnteredAmount(e.target.value);
-        setUserInput({
-            ...userInput,
-            enteredAmount : e.target.value,
-        })
-    }; 
+        setEnteredAmount(e.target.value);
+        // setUserInput({
+        //     ...userInput,
+        //     enteredAmount : e.target.value,
+        //     });
+        // }; 
 
     const dateChangeHandler = (e) => {
-        // setEnteredDate(e.target.value);
-        setUserInput({
-            ...userInput,
-            enteredDate : e.target.value,
-        });
-    }
+        setEnteredDate(e.target.value);
+        // setUserInput({
+        //     ...userInput,
+        //     enteredDate : e.target.value,
+        //     });
+        // };
     return <form>
         
         <div className="new-expense__controls">
