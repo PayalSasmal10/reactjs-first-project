@@ -1,8 +1,8 @@
 
 const ExpensesFilter = () => {
     return (
-        <div>
-            <div>
+        <div className="expenses-filter">
+            <div className="expenses-filter__control">
                 <label>Filter By Year</label>
                 <select>
                     <option value='2022'>2022</option>
