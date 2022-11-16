@@ -14,7 +14,7 @@ const  ExpenseItem = (props) => {
 
     const btnClick = () => {
       setTitle('Updated!');
-      console.log(title);
+      
     }
   
     return (

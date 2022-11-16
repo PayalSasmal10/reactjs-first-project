@@ -45,7 +45,6 @@ const  App = () => {
     });
   };
 
-  console.log("app", expenses);
 
    return (
     <div>

@@ -6,9 +6,8 @@ import ExpensesFilter from "../ExpensesFilters/ExpensesFilter";
 import { useState } from "react";
 
 const Expenses = (props) => {
-  console.log("Item:",props.items);
   const [filterYear, setFilterYear] = useState("");
-  console.log(filterYear);
+  // console.log(filterYear);
   return (
     <div>
       <ExpensesFilter setFilterYear={setFilterYear} />
@@ -16,6 +15,7 @@ const Expenses = (props) => {
         {/* Dynamic way to reder the list */}
         {props.items.map((exps) => (
           <ExpenseItem
+            key={exps.id}
             title={exps.title}
             amount={exps.amount}
             date={exps.date}
