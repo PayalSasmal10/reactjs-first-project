@@ -6,7 +6,7 @@ import ExpensesFilter from "../ExpensesFilters/ExpensesFilter";
 import { useState } from "react";
 
 const Expenses = (props) => {
-  // console.log("Item:",props.items);
+  console.log("Item:",props.items);
   const [filterYear, setFilterYear] = useState("");
   console.log(filterYear);
   return (
@@ -20,7 +20,7 @@ const Expenses = (props) => {
             amount={exps.amount}
             date={exps.date}
           />
-        ))};
+        ))}
         {/* This way we can also do but this is the manual way  */}
         {/* <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date} ></ExpenseItem>
             <ExpenseItem title={props.items[1].title} amount={props.items[1].amount} date={props.items[1].date}></ExpenseItem>
