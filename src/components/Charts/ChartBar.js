@@ -18,3 +18,5 @@ const ChartBar = (props) => {
     </div>
   );
 };
+
+export default ChartBar;
