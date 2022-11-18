@@ -4,6 +4,7 @@ import "./Expenses.css";
 import ExpensesFilter from "./ExpensesFilter";
 import { useState } from "react";
 import ExpensesList from "./ExpensesList";
+import ExpensesCharts from "./ExpensesCharts";
 
 const Expenses = (props) => {
   const [filterYear, setFilterYear] = useState("2022");
@@ -23,7 +24,7 @@ const Expenses = (props) => {
       <ExpensesFilter selected={filterYear} onChangeFilter={filterChangeHandler}/>
       <Card className="expenses">
         {/* Dynamic way to reder the list */}
-        
+      <ExpensesCharts expenses={filteredYearExpenses}/>
       <ExpensesList items={filteredYearExpenses}/>
 
         {/* This way we can also do but this is the manual way  */}
